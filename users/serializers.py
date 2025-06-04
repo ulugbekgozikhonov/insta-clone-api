@@ -5,6 +5,6 @@ from rest_framework.response import Response
 class UserSerializers(ModelSerializer):
     class Meta:
         model = User
-        fields = ['username', 'last_name','email', 'password']
+        fields = ['id','username', 'last_name','email']
     
   

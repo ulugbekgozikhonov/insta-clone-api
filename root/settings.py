@@ -115,3 +115,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # AUTH_USER_MODEL = 'users.CustomUser'  # 'yourapp' o'rniga app nomingizni yozing
+# AUTH_USER_MODEL = 'users.CUser'
