@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .myregex import is_valid_email, is_valid_phone_number
+from general.utils import is_valid_email, is_valid_phone_number
 from users.models import User
 
 
@@ -39,7 +39,7 @@ class UserSerializer(serializers.Serializer):
             last_name=" ".join(validated_data["fullname"].split()[1:]),
             email=email,
             phone_number=phone,
-            verify_type="email" if email else "phone",
+            auth_type="email" if email else "phone",
             auth_state="begin",
         )
         user.set_password(validated_data["password"])

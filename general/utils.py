@@ -14,3 +14,8 @@ def is_valid_phone_number(phone_number):
     Validate the phone number using a regex pattern.
     """
     return re.match(PHONE_NUMBER_REGEX, phone_number) is not None
+
+if __name__ == "__main__":
+    # Example usage
+    print(is_valid_email("test@example.com"))
+    print(is_valid_phone_number("+998994567890"))
